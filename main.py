@@ -10,7 +10,7 @@ import re
 nltk.download('stopwords')
 
 # Load the trained model and vectorizer
-model = joblib.load("model.pkl")               # Trained classifier
+model = joblib.load("model1.pkl")               # Trained classifier
 vectorizer = joblib.load("vectorizer.pkl")     # CountVectorizer or TfidfVectorizer
 
 # Initialize stemmer and stopwords
