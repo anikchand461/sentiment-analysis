@@ -4,14 +4,20 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer
 import re
+import os
 
 
 # Download stopwords once
 nltk.download('stopwords')
 
-# Load the trained model and vectorizer
-model = joblib.load("models/model1.pkl")               # Trained classifier
-vectorizer = joblib.load("models/vectorizer.pkl")     # CountVectorizer or TfidfVectorizer
+# Get absolute path to models directory
+base_path = os.path.dirname(__file__)
+model_path = os.path.join(base_path, "models", "model1.pkl")
+vectorizer_path = os.path.join(base_path, "models", "vectorizer.pkl")
+
+# Load them safely
+model = joblib.load(model_path)
+vectorizer = joblib.load(vectorizer_path)
 
 # Initialize stemmer and stopwords
 ps = PorterStemmer()
