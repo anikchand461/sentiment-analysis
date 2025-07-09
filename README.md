@@ -1,6 +1,6 @@
 # 🧠 Stacking Ensemble for Text Classification
 
-This project demonstrates a **multi-layer stacking ensemble** for a classification task on a high-dimensional, sparse dataset. It leverages several classical machine learning algorithms and builds a deep stacking pipeline with performance tuning and cross-validation to achieve high accuracy.
+This project demonstrates a **stacking ensemble** for a classification task on a high-dimensional, sparse dataset. It leverages several classical machine learning algorithms and builds a deep stacking pipeline with performance tuning and cross-validation to achieve high accuracy.
 
 ---
 
