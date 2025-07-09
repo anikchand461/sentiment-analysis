@@ -26,15 +26,6 @@ Layer 0 (Base Models):
 
 Layer 1 (Meta Model):
     ✔️ LogisticRegression
-
-↓ Outputs
-
-Layer 2 (Ensemble on Layer 1 Output):
-    ✔️ RidgeClassifier
-    ✔️ SGDClassifier
-
-↓ Final Decision (Voting):
-    ✔️ Hard voting across Ridge & SGD predictions
 ```
 
 ---
